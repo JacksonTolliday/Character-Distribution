@@ -41,5 +41,5 @@ import string
 inp = input(str('Please enter a string of text (the bigger the better): '))
 print('The distribution of characters in "{0}" is:'.format(inp))
 letrange = list(inp)
-
+print(sorted(letrange))
 
