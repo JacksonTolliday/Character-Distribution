@@ -41,6 +41,8 @@ import string
 inp = input(str('Please enter a string of text (the bigger the better): ')).lower()
 print('The distribution of characters in "{0}" is:'.format(inp))
 ltr = (sorted(list(inp)))
+con = ltr.count(' ')
+del ltr[0:(con)]
 
 print(ltr)
 
