@@ -42,7 +42,9 @@ inp = input(str('Please enter a string of text (the bigger the better): ')).lowe
 print('The distribution of characters in "{0}" is:'.format(inp))
 ltr = (sorted(list(inp)))
 con = ltr.count(' ')
-del ltr[0:(con)]
+conp = ltr.count('.')
+del ltr[0:(con+conp)]
+
 
 print(ltr)
 
