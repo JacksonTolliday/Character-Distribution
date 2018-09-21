@@ -1,7 +1,7 @@
 """
 distribution.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Jackson Tolliday
+Credit: https://stackoverflow.com/questions/6797984/how-to-convert-string-to-lowercase-in-python
 
 Assignment:
 
