@@ -38,9 +38,9 @@ Notice about this example:
 """
 import string
 
-inp = input(str('Please enter a string of text (the bigger the better): '))
+inp = input(str('Please enter a string of text (the bigger the better): ')).lower()
 print('The distribution of characters in "{0}" is:'.format(inp))
-letrange = list(inp)
+ltr = (sorted(list(inp)))
 
-print(sorted(letrange))
+print(ltr)
 
