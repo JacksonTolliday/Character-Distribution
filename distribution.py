@@ -45,6 +45,4 @@ con = ltr.count(' ')
 conp = ltr.count('.')
 del ltr[0:(con+conp)]
 
-
 print(ltr)
-
