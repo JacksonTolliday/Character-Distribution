@@ -40,6 +40,9 @@ import string
 
 inp = input(str('Please enter a string of text (the bigger the better): '))
 print('The distribution of characters in "{0}" is:'.format(inp))
-letrange = list(inp)
+iter1 = inp.remove( )
+iter2 = iter1.remove(.)
+iter3 = iter2.remove(,)
+letrange = list(iter3)
 print(sorted(letrange))
 
