@@ -41,14 +41,16 @@ import string
 inp = input(str('Please enter a string of text (the bigger the better): ')).lower()
 print('The distribution of characters in "{0}" is:'.format(inp))
 ltr = (sorted(list(inp)))
+ltr.append('0')
 con = ltr.count(' ')
 conp = ltr.count('.')
 conc = ltr.count(',')
 del ltr[0:(con+conp+conc)]
-for x in ltr:
+for x in range(len(ltr)):
     if ltr[x] != ltr[x+1]:
-        y = ltr[x+1]
+        ltr.append[x+1]
     else:
-        
+        ltr == ltr
+
 print(ltr)
 print(y)
