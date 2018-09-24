@@ -43,6 +43,10 @@ print('The distribution of characters in "{0}" is:'.format(inp))
 ltr = (sorted(list(inp)))
 con = ltr.count(' ')
 conp = ltr.count('.')
-del ltr[0:(con+conp)]
-
+conc = ltr.count(',')
+del ltr[0:(con+conp+conc)]
+for x in ltr:
+    if ltr[x] != ltr[x+1]:
+        ltr.append(ltr[x+1])
+        
 print(ltr)
