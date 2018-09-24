@@ -48,6 +48,7 @@ del ltr[0:(con+conp+conc)]
 for x in ltr:
     if ltr[x] != ltr[x+1]:
         y = ltr[x+1]
+    else:
         
 print(ltr)
 print(y)
