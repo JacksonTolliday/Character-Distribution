@@ -46,10 +46,13 @@ conp = ltr.count('.')
 conc = ltr.count(',')
 del ltr[0:(con+conp+conc)]
 print(ltr)
+ltrlist = []
 for x in range(len(ltr)):
     if ltr[x] != ltr[x+1]:
         y = x+1
         print(y)
+        ltrlist.append(y)
     else:
         if ltr[-1] == ltr[x]:
             break
+print(ltrlist)
