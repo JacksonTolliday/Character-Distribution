@@ -56,17 +56,7 @@ for x in range(len(ltr)):       #to find where the letters swap in the table
             break
 print(ltrlist)
 
-ltre = (ltr[0])
+ltre = (ltr[0], ltr[ltrlist])
 print(ltre)
-z = 0
 
-for x in ltr:                   #to delete same letters
-    if ltr[x] != ltr[x+1]:
-        z = ltr[x+1]
-        ltre.append(z)
-    else:
-        if ltr[-1] == ltr[x]:
-            break
-
-print(ltre)
 
