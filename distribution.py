@@ -57,7 +57,7 @@ for x in range(len(ltr)):       #to find where the letters swap in the table
 print(ltrlist)
 
 ltre = (ltr[0])
-
+    
 for n in ltrlist:
     ltre.append(ltr[n])
 
