@@ -60,6 +60,6 @@ while x in range(len(ltr)):      #to delete all letter duplicates
     if ltr[x] != ltr[x+1]:
         del ltr[x+1]
     else:
-        0
+        x = x+1
 print(ltr)
 
