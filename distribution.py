@@ -58,7 +58,10 @@ print(ltrlist)
 
 while x in range(len(ltr)):      #to delete all letter duplicates
     if ltr[x] != ltr[x+1]:
-        del ltr[x+1]
+        if ltr[x] == ltr[x-1]:
+            break
+        else:
+            del ltr[x+1]
     else:
         x = x+1
 print(ltr)
