@@ -56,7 +56,7 @@ for x in range(len(ltr)):       #to find where the letters swap in the table
             break
 print(ltrlist)
 
-while x in range(len(ltr)):       #to find where the letters swap in the table
+while x in range(len(ltr)):      #to delete all letter duplicates
     if ltr[x] != ltr[x+1]:
         del ltr[x+1]
     else:
