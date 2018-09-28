@@ -60,16 +60,17 @@ zmax = len(ltr)-1
 print(zmax)
 z=0
 
-while z in range(len(ltr)):      #to delete all letter duplicates
+for z in range(len(ltr)):      #to delete all letter duplicates
     if z < zmax:
-        if ltr[z] != ltr[z+1]:
-            del ltr[z+1]
+        if ltr[z] == ltr[z+1]:
+            del ltr[z]
             ltr.append('extra')
         else:
             z = z+1
     else:
         break
 print(ltr)
+
 
 
 
