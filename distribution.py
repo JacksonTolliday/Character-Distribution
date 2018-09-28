@@ -60,12 +60,14 @@ ymax = len(ltr)-1
 print(ymax)
 
 while y in range(len(ltr)-1):      #to delete all letter duplicates
-    if ltr[y] != ltr[y+1]:
-        del ltr[y+1]
-        ltr.append('extra')
+    if y <=	ymax:
+        if ltr[y] != ltr[y+1]:
+            del ltr[y+1]
+            ltr.append('extra')
+        else:
+            y = y+1
     else:
-        y = y+1
-
+        break
 print(ltr)
 
 
