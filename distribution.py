@@ -56,16 +56,17 @@ for x in range(len(ltr)):       #to find where the letters swap in the table
             break
 print(ltrlist)
 
-ymax = len(ltr)-1
-print(ymax)
+zmax = len(ltr)-1
+print(zmax)
+z=0
 
-while y in range(len(ltr)-1):      #to delete all letter duplicates
-    if y <=	ymax:
-        if ltr[y] != ltr[y+1]:
-            del ltr[y+1]
+while z in range(len(ltr)):      #to delete all letter duplicates
+    if z < zmax:
+        if ltr[z] != ltr[z+1]:
+            del ltr[z+1]
             ltr.append('extra')
         else:
-            y = y+1
+            z = z+1
     else:
         break
 print(ltr)
