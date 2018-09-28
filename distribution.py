@@ -57,20 +57,41 @@ for x in range(len(ltr)):       #to find where the letters swap in the table
 print(ltrlist)
 
 zmax = len(ltr)-1
-print(zmax)
 z=0
 
 for z in range(len(ltr)):      #to delete all letter duplicates
     if z < zmax:
         if ltr[z] == ltr[z+1]:
             del ltr[z]
-            ltr.append('extra')
+            ltr.insert(0, 'extra')
         else:
             z = z+1
     else:
         break
-print(ltr)
 
+for z in range(len(ltr)):      #to delete all letter duplicates
+    if z < zmax:
+        if ltr[z] == ltr[z+1]:
+            del ltr[z]
+            ltr.insert(0, 'extra')
+        else:
+            z = z+1
+    else:
+        break
+
+for z in range(len(ltr)):      #to delete all letter duplicates
+    if z < zmax:
+        if ltr[z] == ltr[z+1]:
+            del ltr[z]
+            ltr.insert(0, 'extra')
+        else:
+            z = z+1
+    else:
+        break
+exltrcont = ltr.count('extra')
+print(exltrcont)
+
+print(ltr)
 
 
 
