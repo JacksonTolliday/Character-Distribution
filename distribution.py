@@ -57,7 +57,7 @@ for x in range(len(ltr)):       #to find where the letters swap in the table
 trultrlist = []
 h = 0
 for x in range(len(ltrlist)):       #to pin down how many of each letter
-    h = ltr[x] - ltr[x-1]
+    h = int(ltr[x]) - int(ltr[x-1])
     trultrlist.append(h)
 
 print(trultrlist)
