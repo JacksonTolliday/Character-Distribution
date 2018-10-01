@@ -109,10 +109,9 @@ print(ltrzip)
 
 c = 0
 for c in ltrzip:
-    if ltrzip[c] < ltrzip[c+1]
-    ltrzip[c], ltrzip[c+1] = ltrzip[c+1], ltrzip[c]
+    if ltrzip[c] < ltrzip[c+1]:
+        ltrzip[c], ltrzip[c+1] = ltrzip[c+1], ltrzip[c]
     
 print(ltrzip)
-
 
 
