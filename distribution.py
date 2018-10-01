@@ -54,6 +54,14 @@ for x in range(len(ltr)):       #to find where the letters swap in the table
         if ltr[-1] == ltr[x]:
             break
 
+trultrlist = []
+h = 0
+for x in range(len(ltrlist)):       #to pin down how many of each letter
+    h = ltr[x] - ltr[x-1]
+    trultrlist.append(h)
+
+print(trultrlist)
+
 zmax = len(ltr)-1
 z=0
 
