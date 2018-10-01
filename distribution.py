@@ -45,7 +45,6 @@ con = ltr.count(' ')
 conp = ltr.count('.')
 conc = ltr.count(',')
 del ltr[0:(con+conp+conc)]      #delete spaces, periods, and commas
-print(ltr)
 ltrlist = []
 for x in range(len(ltr)):       #to find where the letters swap in the table
     if ltr[x] != ltr[x+1]:
@@ -54,7 +53,6 @@ for x in range(len(ltr)):       #to find where the letters swap in the table
     else:
         if ltr[-1] == ltr[x]:
             break
-print(ltrlist)
 
 zmax = len(ltr)-1
 z=0
@@ -89,11 +87,14 @@ for z in range(len(ltr)):      #to delete all letter duplicates
     else:
         break
 exltrcont = ltr.count('extra')
-print(exltrcont)
-
-print(ltr)
 
 ltrlist.append(len(ltr))
 
+del ltr[0:(exltrcont)]
+
+print(ltr)
 print(ltrlist)
 
+ltrzp = zip(ltrlist, ltr)
+ltrzip = (list(ltrzp)
+print(ltrzip)
