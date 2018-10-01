@@ -123,7 +123,7 @@ ha = 0
 hac = 0
 while hac > 0:
     hac = 0
-    for x and y in ltrzip:
+    for x, y in ltrzip:
         ltrzip[x][0]* ltrzip[y][1] = ha
         print(ha)
         ha = 0
