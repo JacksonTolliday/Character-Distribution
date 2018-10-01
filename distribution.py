@@ -101,20 +101,32 @@ for x in range(len(ltrlist)):       #to pin down how many of each letter
 trultrlist.insert(0, trultrlist[0] + ltrlist[-1])   # to fix 1st variable
 del trultrlist[1]
 
-print(trultrlist)
-
 ltrzp = zip(trultrlist, ltr)
 ltrzip = sorted(list(ltrzp))
-print(ltrzip)
 
 cmax = len(ltrzip)-1
 c = 0
 
-for c in range(len(ltrzip)):
-    if c < cmax:
-        if ltrzip[c][0] < ltrzip[c+1][0]:
-            ltrzip[c], ltrzip[c+1] = ltrzip[c+1], ltrzip[c]
-    
+swap = 1
+while swap > 0:
+    swap = 0
+    for c in range(len(ltrzip)):
+        if c < cmax:
+            if ltrzip[c][0] < ltrzip[c+1][0]:
+                ltrzip[c], ltrzip[c+1] = ltrzip[c+1], ltrzip[c]
+                swap = 1
+
 print(ltrzip)
+
+finaltr = []
+ha = 0
+hac = 0
+while hac > 0:
+    hac = 0
+    for x and y in ltrzip:
+        ltrzip[x][0]* ltrzip[y][1] = ha
+        print(ha)
+        ha = 0
+        hac = 1
 
 
