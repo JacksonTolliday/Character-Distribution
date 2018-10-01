@@ -93,5 +93,7 @@ print(exltrcont)
 
 print(ltr)
 
+ltrlist.append(range(len(ltr[-1])))
 
+print(ltrlist)
 
