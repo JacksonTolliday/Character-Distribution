@@ -54,14 +54,6 @@ for x in range(len(ltr)):       #to find where the letters swap in the table
         if ltr[-1] == ltr[x]:
             break
 
-trultrlist = []
-h = 0
-for x in range(len(ltrlist)):       #to pin down how many of each letter
-    h = int(ltr[x]) - int(ltr[x-1])
-    trultrlist.append(h)
-
-print(trultrlist)
-
 zmax = len(ltr)-1
 z=0
 
@@ -100,9 +92,18 @@ ltrlist.append(len(ltr))
 
 del ltr[0:(exltrcont)]
 
-print(ltr)
-print(ltrlist)
+trultrlist = []
+h = 0
+for x in range(len(ltrlist)):       #to pin down how many of each letter
+    h = ltrlist[x] - ltrlist[x-1]
+    trultrlist.append(h)
 
-ltrzp = zip(ltrlist, ltr)
-ltrzip = (list(ltrzp))
+trultrlist.insert(0, trultrlist[0] + ltrlist[-1])   # to fix 1st variable
+del trultrlist[1]
+
+print(trultrlist)
+
+ltrzp = zip(trultrlist, ltr)
+ltrzip = sorted(list(ltrzp))
 print(ltrzip)
+
