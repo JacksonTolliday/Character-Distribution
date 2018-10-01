@@ -125,8 +125,8 @@ hac = 0
 while hac > 0:
     hac = 0
     ha = 0
-    for x, y in ltrzip:
-        ha = ltrzip[x][1] * ltrzip[y][0]
+    for x in ltrzip:
+        ha = (ltrzip[x][1] * ltrzip[x][0])
         print(ha)
         hac = 1
 
