@@ -118,9 +118,6 @@ while swap > 0:
 
 print(ltrzip)
 
-
-finaltr = []
-ha = 0
 hac = 0
 while hac > 0:
     hac = 0
