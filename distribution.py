@@ -107,10 +107,13 @@ ltrzp = zip(trultrlist, ltr)
 ltrzip = sorted(list(ltrzp))
 print(ltrzip)
 
+cmax = len(ltrzip)-1
 c = 0
+
 for c in range(len(ltrzip)):
-    if ltrzip[c][0] < ltrzip[c+1][0]:
-        ltrzip[c][0], ltrzip[c+1][0] = ltrzip[c+1][0], ltrzip[c][0]
+    if c < cmax:
+        if ltrzip[c][0] < ltrzip[c+1][0]:
+            ltrzip[c], ltrzip[c+1] = ltrzip[c+1], ltrzip[c]
     
 print(ltrzip)
 
