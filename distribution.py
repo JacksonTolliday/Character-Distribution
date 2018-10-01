@@ -96,5 +96,5 @@ print(ltr)
 print(ltrlist)
 
 ltrzp = zip(ltrlist, ltr)
-ltrzip = (list(ltrzp)
+ltrzip = (list(ltrzp))
 print(ltrzip)
