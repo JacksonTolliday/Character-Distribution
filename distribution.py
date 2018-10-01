@@ -118,15 +118,16 @@ while swap > 0:
 
 print(ltrzip)
 
+
 finaltr = []
 ha = 0
 hac = 0
 while hac > 0:
     hac = 0
+    ha = 0
     for x, y in ltrzip:
-        ltrzip[x][0]* ltrzip[y][1] = ha
+        ha = ltrzip[x][1] * ltrzip[y][0]
         print(ha)
-        ha = 0
         hac = 1
 
 
