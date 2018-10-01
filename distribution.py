@@ -108,9 +108,9 @@ ltrzip = sorted(list(ltrzp))
 print(ltrzip)
 
 c = 0
-for c in ltrzip:
-    if ltrzip[c] < ltrzip[c+1]:
-        ltrzip[c], ltrzip[c+1] = ltrzip[c+1], ltrzip[c]
+for c in range(len(ltrzip)):
+    if ltrzip[c][0] < ltrzip[c+1][0]:
+        ltrzip[c][0], ltrzip[c+1][0] = ltrzip[c+1][0], ltrzip[c][0]
     
 print(ltrzip)
 
