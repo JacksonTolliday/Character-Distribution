@@ -48,7 +48,7 @@ conp = ltr.count('.')
 conc = ltr.count(',')
 del ltr[0:(con+conp+conc)]      #delete spaces, periods, and commas
 ltrlist = []
-for x in range(len(ltr)):       #to find where the letters swap in the table
+for x in range(len(ltr)-1):       #to find where the letters swap in the table
     if ltr[x] != ltr[x+1]:
         y = x+1
         ltrlist.append(int(y))
