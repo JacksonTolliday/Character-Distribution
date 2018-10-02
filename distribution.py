@@ -49,7 +49,7 @@ ltrlist = []
 for x in range(len(ltr)):       #to find where the letters swap in the table
     if ltr[x] != ltr[x+1]:
         y = x+1
-        ltrlist.append(y)
+        ltrlist.append(int(y))
     else:
         if ltr[-1] == ltr[x]:
             break
@@ -116,15 +116,9 @@ while swap > 0:
                 ltrzip[c], ltrzip[c+1] = ltrzip[c+1], ltrzip[c]
                 swap = 1
 
-print(ltrzip)
-
-hac = 0
-while hac > 0:
-    hac = 0
-    ha = 0
-    for x in ltrzip:
-        ha = (ltrzip[x][1] * ltrzip[x][0])
-        print(ha)
-        hac = 1
+i=0
+t=0
+for i,t in ltrzip:
+    print("{}".format(str(t)*int(i)))
 
 
